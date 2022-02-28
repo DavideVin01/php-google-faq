@@ -60,7 +60,7 @@ $paragraphs = [
 </head>
 
 <body>
-    <header class="p-3 pb-2">
+    <header class="p-3 pb-2 fixed-top bg-white">
         <div class="d-flex justify-content-between">
 
             <div class="d-flex">
@@ -94,7 +94,7 @@ $paragraphs = [
         </div>
     </header>
     <hr class="m-0">
-    <main class="small-container my-5 py-5">
+    <main class="small-container py-5 my-5">
         <section>
             <?php foreach ($paragraphs as $paragraph) :
                 $paragraphs = explode('.', $paragraph['text']);
@@ -107,6 +107,22 @@ $paragraphs = [
             <?php endforeach; ?>
         </section>
     </main>
+    <footer class="container-fluid">
+        <div class="small-container d-flex justify-content-between py-3">
+            <ul class="text-small d-flex m-0 p-0">
+                <li><a href="#">Google</a></li>
+                <li><a href="#">Tutto su Google</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Termini</a></li>
+            </ul>
+            <select name="language" id="language">
+                <option value="Italiano">Italiano</option>
+                <option value="Inglese">Inglese</option>
+                <option value="Tedesco">Tedesco</option>
+                <option value="Francese">Francese</option>
+            </select>
+        </div>
+    </footer>
 </body>
 
 </html>
