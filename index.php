@@ -60,40 +60,43 @@ $paragraphs = [
 </head>
 
 <body>
-    <header class="p-3 pb-2 fixed-top bg-white">
-        <div class="d-flex justify-content-between">
+    <header class="fixed-top bg-white">
+        <section class="p-3 pb-2">
 
-            <div class="d-flex">
-                <div id="img-box" role="button">
-                    <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/272px-Google_2015_logo.svg.png" alt="Google Logo">
+            <div class="d-flex justify-content-between">
+
+                <div class="d-flex">
+                    <div id="img-box" role="button">
+                        <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/272px-Google_2015_logo.svg.png" alt="Google Logo">
+                    </div>
+                    <div class="h5 text-secondary ms-1" role="button">Privacy e termini</div>
                 </div>
-                <div class="h5 text-secondary ms-1" role="button">Privacy e termini</div>
+                <div class="box rounded-circle" role="button"></div>
             </div>
-            <div class="box rounded-circle" role="button"></div>
-        </div>
-        <div>
-            <nav>
-                <ul class="d-flex m-0 p-0">
-                    <li>
-                        <a href="#">Introduzione</a>
-                    </li>
-                    <li>
-                        <a href="#">Nome sulla privacy</a>
-                    </li>
-                    <li>
-                        <a href="#">Termini di servizio</a>
-                    </li>
-                    <li>
-                        <a href="#">Tecnologie</a>
-                    </li>
-                    <li>
-                        <a href="#" class="active">Domande frequenti</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+            <div>
+                <nav>
+                    <ul class="d-flex m-0 p-0">
+                        <li>
+                            <a href="#">Introduzione</a>
+                        </li>
+                        <li>
+                            <a href="#">Nome sulla privacy</a>
+                        </li>
+                        <li>
+                            <a href="#">Termini di servizio</a>
+                        </li>
+                        <li>
+                            <a href="#">Tecnologie</a>
+                        </li>
+                        <li>
+                            <a href="#" class="active">Domande frequenti</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <hr class="m-0">
     </header>
-    <hr class="m-0">
     <main class="small-container py-5 my-5">
         <section>
             <?php foreach ($paragraphs as $paragraph) :
